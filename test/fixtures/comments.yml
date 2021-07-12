@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  point_of_interest: one
+  text: MyString
+  date: 1
+  img: MyString
+
+two:
+  user: two
+  point_of_interest: two
+  text: MyString
+  date: 1
+  img: MyString

@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  source: MyString
+  alt_text: MyString
+  RiverStretch: one
+  caption: MyString
+
+two:
+  source: MyString
+  alt_text: MyString
+  RiverStretch: two
+  caption: MyString
