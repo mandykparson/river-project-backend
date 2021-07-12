@@ -10,38 +10,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_12_202805) do
+ActiveRecord::Schema.define(version: 2021_07_12_221527) do
 
   create_table "comments", force: :cascade do |t|
     t.integer "user_id", null: false
-    t.integer "point_of_interest_id", null: false
+    t.integer "poi_id", null: false
     t.string "text"
     t.integer "date"
     t.string "img"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["point_of_interest_id"], name: "index_comments_on_point_of_interest_id"
+    t.index ["poi_id"], name: "index_comments_on_poi_id"
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
   create_table "images", force: :cascade do |t|
     t.string "source"
     t.string "alt_text"
-    t.integer "RiverStretch_id", null: false
+    t.integer "river_stretch_id", null: false
     t.string "caption"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["RiverStretch_id"], name: "index_images_on_RiverStretch_id"
+    t.index ["river_stretch_id"], name: "index_images_on_river_stretch_id"
   end
 
-  create_table "point_of_interests", force: :cascade do |t|
+  create_table "pois", force: :cascade do |t|
     t.string "icon"
     t.string "information"
     t.string "coords"
-    t.integer "Image_id", null: false
+    t.integer "image_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["Image_id"], name: "index_point_of_interests_on_Image_id"
+    t.index ["image_id"], name: "index_pois_on_image_id"
   end
 
   create_table "river_stretches", force: :cascade do |t|
@@ -62,8 +62,8 @@ ActiveRecord::Schema.define(version: 2021_07_12_202805) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "comments", "point_of_interests"
+  add_foreign_key "comments", "pois"
   add_foreign_key "comments", "users"
-  add_foreign_key "images", "RiverStretches"
-  add_foreign_key "point_of_interests", "Images"
+  add_foreign_key "images", "river_stretches"
+  add_foreign_key "pois", "images"
 end

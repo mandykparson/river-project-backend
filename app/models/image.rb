@@ -1,4 +1,4 @@
 class Image < ApplicationRecord
-  belongs_to :RiverStretch
-  has_many :Point_of_Interests
+  belongs_to :river_stretch
+  has_many :pois
 end

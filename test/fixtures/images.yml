@@ -3,11 +3,11 @@
 one:
   source: MyString
   alt_text: MyString
-  RiverStretch: one
+  river_stretch: one
   caption: MyString
 
 two:
   source: MyString
   alt_text: MyString
-  RiverStretch: two
+  river_stretch: two
   caption: MyString

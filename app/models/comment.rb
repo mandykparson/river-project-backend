@@ -1,4 +1,4 @@
 class Comment < ApplicationRecord
   belongs_to :user
-  belongs_to :point_of_interest
+  belongs_to :poi
 end

@@ -2,14 +2,14 @@
 
 one:
   user: one
-  point_of_interest: one
+  poi: one
   text: MyString
   date: 1
   img: MyString
 
 two:
   user: two
-  point_of_interest: two
+  poi: two
   text: MyString
   date: 1
   img: MyString

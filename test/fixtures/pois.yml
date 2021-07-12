@@ -4,10 +4,10 @@ one:
   icon: MyString
   information: MyString
   coords: MyString
-  Image: one
+  image: one
 
 two:
   icon: MyString
   information: MyString
   coords: MyString
-  Image: two
+  image: two
