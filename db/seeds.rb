@@ -4,11 +4,11 @@ Image.destroy_all
 RiverStretch.destroy_all
 
 riverstretches = RiverStretch.create([
-    {name: "Cataract Canyon", river: "Colorado" , miles: "40", permit: true , permit_link: "recreation.gov", put_in: "Potash Road"},
-    {name: "Upper San Juan River", river: "San Juan", miles: "150", permit: true, permit_link: "reacreation.gov", put_in: "Sand Island" },
-    {name: "Moab Daily" , river: "Colorado" , miles: "15", permit: false, permit_link: "", put_in: "Hittle Bottom"},
-    {name: "Middle Fork", river: "Salmon" , miles: "44-97", permit: true, permit_link: "recreation.gov", put_in: "wherever" },
-    {name: "Brown's Canyon", river: "Arkansas", miles: "74" , permit: false, permit_link: "recreation.gov", put_in: "Fisherman's Bridge"}
+    {name: "Cataract Canyon", river: "Colorado" , miles: 40, img: "https://i.imgur.com/5EeQWhS.png", permit: true , permit_link: "recreation.gov", put_in: "Potash Road"},
+    {name: "Upper San Juan River", river: "San Juan", miles: 150, img: "https://i.imgur.com/eYvxW16.png", permit: true, permit_link: "reacreation.gov", put_in: "Sand Island" },
+    {name: "Moab Daily" , river: "Colorado" , miles: 15, img: "https://i.imgur.com/RO5oY9L.png", permit: false, permit_link: "", put_in: "Hittle Bottom"},
+    {name: "Middle Fork", river: "Salmon" , miles: 95, img: "https://i.imgur.com/puIyUy2.png", permit: true, permit_link: "recreation.gov", put_in: "wherever" },
+    {name: "Brown's Canyon", river: "Arkansas", miles: 74, img: "https://i.imgur.com/MwPPFTU.png", permit: false, permit_link: "recreation.gov", put_in: "Fisherman's Bridge"}
 ])
 
 cataract_images = Image.create([

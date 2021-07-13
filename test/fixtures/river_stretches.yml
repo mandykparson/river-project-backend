@@ -3,15 +3,19 @@
 one:
   name: MyString
   river: MyString
-  miles: MyString
+  miles: 1
+  img: MyString
   permit: false
   permit_link: MyString
   put_in: MyString
+  information: MyString
 
 two:
   name: MyString
   river: MyString
-  miles: MyString
+  miles: 1
+  img: MyString
   permit: false
   permit_link: MyString
   put_in: MyString
+  information: MyString
