@@ -1,4 +1,7 @@
 class CommentsController < ApplicationController
-    belong_to :poi
-    belong_to :user
+    
+    def index
+        @comments = Comment.all
+        render json: @comments
+    end
 end

@@ -1,4 +1,6 @@
 class PoisController < ApplicationController
-    belongs_to :image
-    has_many :comments
+    
+    def index
+        @pois = Poi.all
+        render json: @pois, include: :comments
 end
